@@ -3,7 +3,7 @@ class ArticlesController < ApplicationController
     @article = Article.find_by title: params[:id]
 
     # redirect to 'new' if article is not found
-    if @article == nil
+    unless @article
       redirect_to action: 'new', title: params[:id]
     end
     # @article = Article.find(params[:id])
