@@ -1,4 +1,13 @@
 class ArticlesController < ApplicationController
+  def index
+    @article = Article.find_by title: 'Home' # default homepage
+    unless @article
+      show
+    else
+      render :show
+    end
+  end
+
   def show
     @article = Article.find_by title: params[:id]
 

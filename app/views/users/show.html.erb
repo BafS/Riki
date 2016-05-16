@@ -10,5 +10,11 @@
   <%= @user.attribut %>
 </p>
 
+<p>
+  <strong>Group:</strong>
+  <%= Group.where(id: @user.group_id).first.name %> [TODO: use relations ?]
+  <%= @user.group %>
+</p>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

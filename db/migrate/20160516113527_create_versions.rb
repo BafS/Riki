@@ -3,7 +3,7 @@ class CreateVersions < ActiveRecord::Migration[5.0]
     create_table :versions do |t|
       t.string :title
       t.text :content
-      t.Date :date
+      t.date :date
 
       t.timestamps
     end

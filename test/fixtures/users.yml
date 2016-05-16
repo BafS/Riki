@@ -1,9 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
+  name: Admin
   attribut: MyString
 
 two:
-  name: MyString
+  name: Fabien
+  attribut: MyString
+
+tree:
+  name: Leonard
   attribut: MyString
